@@ -20,10 +20,10 @@ sap took libraries images and added their own features to build BTP software
 
 ADVANTAGES OF BTP
 
-o	SCALABILITY
-o	ELASTICITY (swap from one cloud to another)
-o	LOW TCO (total cost of ownership)
-	Initial investment can be saved by licence cost and all
+1.	SCALABILITY
+2.	ELASTICITY (swap from one cloud to another)
+3.	LOW TCO (total cost of ownership)
+  A.	Initial investment can be saved by licence cost and all
 
 ENVIRONMENT:
 It allows development and administration of business applications. environments are anchored in sap BTP on sub account level
