@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/155bf1b3-e112-424a-b2b4-17171d09f5a4)Use cases 
+Use cases 
 
 **use case 1 :**
 **Buidling Full stack application**
