@@ -11,7 +11,7 @@ and create a service layer and expose it to UI for End user access in browser
 **side by side extensions**
 ![image](https://github.com/user-attachments/assets/fe7e038e-2f86-40ea-a87a-c382516ac41e)
 
-Here side by side without affecting the existing architecture we create something called as extensions
+Here side by side without affecting the existing architecture we create something called as API's
 we should keep our core stable , because sometimes our custom changes in standard reports will affect the standard reports(BADI , user exits)
 or SAP upgrade release will affect the custom code and cause trouble in Zreports or else due to custom code upgrade will break
 so sap is suggesting to use standard API's which are upgrade safe and doesnt cause any trouble after upgrades and
