@@ -42,6 +42,50 @@ in S4 HANA  they provide two types
 S4 HANA cloud will be an SaaS Application
 
 
+**CDS- Core Data & Services**
+
+CDS is the new approach of building semantically rich data models.
+CDS consists of
+DDL - Data Defintion Lnaguage -design new models- new tables , structures , data elements etc,
+DQL - Data Query Language -(CDS Views & Entities - new views to extract data (aggregate, join ,assosciate, load , calculate , formulas)
+DEL - Dta Expression Language (Path Expression , Case Expression)
+DCL - Data Control Language ( for restricting data & security )
+
+**JSON**
+JSON is a ligh weight data format to transmit data from one sytem to another system(peer)
+
+Syntax :
+{
+"empid":1001,
+"empname":"Madhuchandan",
+"salary": 50000
+}
+
+Nested structure :
+{
+"empstr": {
+            "empid":1001,
+            "empname":"Madhuchandan",
+            "salary": 50000
+            },
+"emptab": [ // its an array
+            {
+            "empid":1001,
+            "empname":"Madhuchandan",
+            "salary": 50000
+            }
+            {
+            "empid":1002,
+            "empname":"Charan",
+            "salary": 60000
+            }
+            ]
+}
+
+
+
+
+
   
 
 
