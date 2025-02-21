@@ -84,6 +84,11 @@ Nested structure :
 }
 ```
 
+We usually use JSON code to upload data to cloud database table
+There is an HTTP Service provided by SAP : **ZABAP_FILE_UPLOADER** using its URL we can upload the json file directly 
+through browser into our database table
+only JSON files are allowed in Cloud system because SAP utility allows us to upload only JSON
+
 
 
 
