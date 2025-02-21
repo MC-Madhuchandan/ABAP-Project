@@ -55,7 +55,7 @@ DCL - Data Control Language ( for restricting data & security )
 JSON is a ligh weight data format to transmit data from one sytem to another system(peer)
 
 Syntax :
-{
+***{
 "empid":1001,
 "empname":"Madhuchandan",
 "salary": 50000
@@ -80,7 +80,7 @@ Nested structure :
             "salary": 60000
             }
             ]
-}
+} ***
 
 
 
