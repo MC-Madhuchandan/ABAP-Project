@@ -23,6 +23,14 @@ Suppose if some one changes the field in DB Table it will affect all tha report 
 
 Suppose if we create an alias name in CDS Entity and instead of field name alias name would have been used in reports or class etc
 we just need to replace a field name in CDS Entity and rest will work fine
+![image](https://github.com/user-attachments/assets/51529c7b-3c32-4271-b25e-4cf23833fd9e)
+
+
+
+
+
+
+
 
 
 
