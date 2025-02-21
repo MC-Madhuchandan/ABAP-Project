@@ -34,6 +34,11 @@ It offers three environments in BTP
 2. Cloud Foundry environment -- one who wokrs with node js and java
 3. Kyma - one who wants to build open source technology using node js and java with hyperscaler application
 
+We are not supposed to used non - released objects in Cloud 
+we cannot hit database table directly 
+ex :~~t005~~ I_country
+
+
 ABAP RESTRICTIONS ON CLOUD ENVIRONMENT 
 ![image](https://github.com/user-attachments/assets/05820495-5c41-41ec-acab-89f604511830)
 
