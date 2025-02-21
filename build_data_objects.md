@@ -90,6 +90,105 @@ through browser into our database table
 only JSON files are allowed in Cloud system because SAP utility allows us to upload only JSON
 
 
+Example database tables
+```
+@EndUserText.label : 'Business Partner Master table'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztbc_bp_mstr {
+
+  key client   : abap.clnt not null;
+  key bp_id    : zlbc_id not null;
+  key bp_role  : zlbc_bptyp not null;
+  @EndUserText.label : 'Company Name'
+  company_name : abap.sstring(256);
+  @EndUserText.label : 'Street'
+  street       : abap.string(256);
+  @EndUserText.label : 'Country'
+  country      : abap.string(256);
+  region       : zlbc_region;
+  @EndUserText.label : 'City'
+  city         : abap.char(100);
+
+}
+
+@EndUserText.label : 'Database table for Product Master'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztbc_prd_mast {
+
+  key client     : abap.clnt not null;
+  key product_id : zlbc_id not null;
+  name           : abap.string(256);
+  category       : abap.char(40);
+  @Semantics.amount.currencyCode : 'ztbc_prd_mast.currency'
+  price          : abap.curr(10,2);
+  currency       : abap.cuky;
+  discount       : abap.int4;
+
+}
+
+@EndUserText.label : 'Sales order Header table'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztbc_so_hdr {
+
+  key client    : abap.clnt not null;
+  key order_id  : zlbc_id not null;
+  order_no      : int4;
+  @AbapCatalog.foreignKey.screenCheck : true
+  buyer         : zlbc_id not null
+    with foreign key [0..*,1] ztbc_bp_mstr
+      where bp_id = ztbc_so_hdr.buyer;
+  @Semantics.amount.currencyCode : 'ztbc_so_hdr.currency_code'
+  gross_amount  : abap.curr(10,2);
+  currency_code : abap.cuky;
+  include zsbc_admin_data;
+
+}
+
+@EndUserText.label : 'Sales order item table'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztbc_so_item {
+
+  key client    : abap.clnt not null;
+  key item_id   : zlbc_id not null;
+  order_id      : zlbc_id;
+  @AbapCatalog.foreignKey.screenCheck : false
+  product       : zlbc_id not null
+    with foreign key [0..*,1] ztbc_prd_mast
+      where product_id = ztbc_so_item.product;
+  @Semantics.amount.currencyCode : 'ztbc_so_item.currency_code'
+  gross_amount  : abap.curr(10,2);
+  currency_code : abap.cuky;
+  @Semantics.quantity.unitOfMeasure : 'ztbc_so_item.unit'
+  qty           : abap.quan(5,2);
+  unit          : abap.unit(3);
+  include zsbc_admin_data;
+
+}
+@EndUserText.label : 'administration data'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+define structure zsbc_admin_data {
+
+  create_by  : abap.char(16);
+  create_on  : timestampl;
+  changed_by : abap.char(16);
+  changed_on : timestampl;
+
+}
+```
+
+
 
 
 
