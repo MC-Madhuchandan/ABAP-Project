@@ -6,8 +6,8 @@ There is no much difference in CDS View entitiy compared to CDS Views , Below me
   *if it generates one HANA View(CDS) & one DDIC View Activation Time was more
   *in earlier cds views a view have 3 names -- file name , cds name , ddic name , CDS entity has simplified and have only one name
 2. Automatic Client Handling (Earlier Annotations was used)
-3.Strict Syntax & Annotation Check
-4.SAP Improved runtime engine for entities to make run faster
+3. Strict Syntax & Annotation Check
+4. SAP Improved runtime engine for entities to make run faster
 5. New Functionalities Introduced ( Regex, Replace, New, Except, Intersect )
 6. Client field is not allowed (As automatic client handling introduced)
 
