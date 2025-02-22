@@ -13,9 +13,9 @@ and create a service layer and expose it to UI for End user access in browser
 
 Here side by side without affecting the existing architecture we create something called as API's
 we should keep our core stable , because sometimes our custom changes in standard reports will affect the standard reports(BADI , user exits)
-or SAP upgrade release will affect the custom code and cause trouble in Zreports or else due to custom code upgrade will break
+or SAP upgrade release will affect the custom code and cause trouble in Zreports or else due to custom code, upgrade will break.
 so sap is suggesting to use standard API's which are upgrade safe and doesnt cause any trouble after upgrades and
-we can also build our own custom API's to communicate with the database and perform CRUDQ operations call BaPi's classes Etc..
+we can also build our own custom API's to communicate with the database and perform CRUDQ operations .Ex; call BaPi's classes Etc..
 
 **Cloud connector** : it is an agent to connect API with cloud securely
 
@@ -34,22 +34,23 @@ in S4 HANA  they provide two types
 1. on premise : very similar to existing approach what we use with SAP GUi access and build our code using ABAP
 2. Cloud : There will be no SAP GUI Access only we can access using browser
 
-   User will logion to broswer from our end and connect with S4 HANA cloud system which intend have HANA database all will be managed by SAP
+   User will logion to broswer from our end and connect with S4 HANA cloud system which intend have HANA database all will be managed by SAP.
    Here SAP allows developer to build our own extensions which is called as Embedded steampunk and we can create side by side extensions 
 
-   RISE with SAP means : As SAP moving a ahead we will be also taken foward 
+   **RISE with SAP** means : As SAP moving a ahead we will be also taken foward 
 
-S4 HANA cloud will be an SaaS Application
+**Note** S4 HANA cloud will be an SaaS Application
 
 
 **CDS- Core Data & Services**
 
 CDS is the new approach of building semantically rich data models.
+
 CDS consists of
-DDL - Data Defintion Lnaguage -design new models- new tables , structures , data elements etc,
-DQL - Data Query Language -(CDS Views & Entities - new views to extract data (aggregate, join ,assosciate, load , calculate , formulas)
-DEL - Dta Expression Language (Path Expression , Case Expression)
-DCL - Data Control Language ( for restricting data & security )
+1. **DDL - Data Defintion Lnaguage** -design new models- new tables , structures , data elements etc,
+2. **DQL - Data Query Language** -(CDS Views & Entities - new views to extract data (aggregate, join ,assosciate, load , calculate , formulas)
+3. **DEL - Dta Expression Language** (Path Expression , Case Expression)
+4. **DCL - Data Control Language** ( for restricting data & security )
 
 **JSON**
 JSON is a ligh weight data format to transmit data from one sytem to another system(peer)
