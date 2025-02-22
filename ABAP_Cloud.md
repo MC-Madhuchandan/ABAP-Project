@@ -16,7 +16,7 @@ Ex: swiggy, Netflix etc.
 Cloud foundry : its an open source Paas which was built by a company called Pivotal Software (a joint venture by EMC, Robert Bosch & sun microsystem)
 
 Sap built a platform called BTP (Paas)
-sap took libraries images and added their own features to build BTP software 
+sap took libraries images from cloud foundry and added their own features to build BTP software 
 
 ADVANTAGES OF BTP
 
