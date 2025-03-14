@@ -36,13 +36,13 @@ It is based on proven technologies and framework such as CDS entities to define 
 and service model infrastrcuture for creating and binding OData services for different use cases
 
 **Components in RAP**
-_CDS Entities - To develop RAP BO ( Business Object )
-_Business object: its a node inside a TREE data structure
+- CDS Entities - To develop RAP BO ( Business Object )
+- Business object: its a node inside a TREE data structure
   which is composed of multiple nodes( parent , child) , The tree starts from a root node
-_once our BO is ready , we define the behaviour of the BO Like can this object be created , updated deleted .
+- once our BO is ready , we define the behaviour of the BO Like can this object be created , updated deleted .
 BO is a static structure ( like class ) and records of actual data is the instance of BO( like object of class)
-_Finally we create service definition and service Binding
-_UI layer to consume the service to build application
+- Finally we create service definition and service Binding
+- UI layer to consume the service to build application
 
 
 
