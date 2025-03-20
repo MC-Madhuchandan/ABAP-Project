@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d72edd03-897a-4bd0-8e85-75485f8b4bc5)**RAP Introduction**
+![image](https://github.com/user-attachments/assets/367d9588-7669-46c4-a8b4-429e89fa2b3e)![image](https://github.com/user-attachments/assets/d72edd03-897a-4bd0-8e85-75485f8b4bc5)**RAP Introduction**
 
 **Challenges in ABAP Development**
 
@@ -43,6 +43,37 @@ and service model infrastrcuture for creating and binding OData services for dif
 BO is a static structure ( like class ) and records of actual data is the instance of BO( like object of class)
 - Finally we create service definition and service Binding
 - UI layer to consume the service to build application
+
+**Development Approach**
+
+![image](https://github.com/user-attachments/assets/e75121d4-63bb-4ffb-9e1a-58cb5ee66ad6)
+
+**RAP Big Picture**
+![image](https://github.com/user-attachments/assets/d7beb611-0550-4851-b900-1df2a65d8006)
+
+**Bueiness Object **
+
+![image](https://github.com/user-attachments/assets/559bbd0e-f085-4df4-85ce-3e055fa74afe)
+
+These Three are the important nodes of Business object
+1. Data Model - Where we build an composition tree with root , parent , child nodes
+2. Behaviour - Includes CRUD operations , Actions , Functions Locks , Etag , Authorization , Feature Control , Draft
+3. Runtime Implementation 
+Ex : Interaction phase referes to user interaction screen (ex: selection screen )
+   TX Buffer is kind of temporary memory to store the data (ex: internal tables , draft tables)
+   Save Sequence is where we update the database table
+
+**Types of Implementation in RAP**
+
+![image](https://github.com/user-attachments/assets/15b1aaa7-f6a2-479c-980b-5b583d4bb5cc)
+
+
+
+**BO Runtime Implementation types **
+![image](https://github.com/user-attachments/assets/9d60968e-fcc6-496e-b8ca-5f8e29dbf27c)
+
+
+
 
 
 
