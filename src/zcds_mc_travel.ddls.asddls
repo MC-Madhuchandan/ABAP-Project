@@ -36,6 +36,19 @@ define root view entity ZCDS_MC_TRAVEL
       // Local ETag Field
       last_changed_at as LastChangedAt,
 
+      case overall_status
+      when 'O' then 'Open'
+      when 'A' then 'Approved'
+      when 'R' then 'Rejected'
+      when 'X' then 'Cancelled'
+      end             as StatusText,
+
+      case overall_status
+      when 'O' then 2
+      when 'A' then 3
+      when 'R' then 1
+      when 'X' then 1
+      end             as Criticality,
       //Expose associsation
       _AGENCY,
       _CUSTOMER,
