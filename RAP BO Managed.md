@@ -37,6 +37,25 @@ This will be managed by RAP Framework by using ETag
 ![image](https://github.com/user-attachments/assets/e94a811c-5f0d-4a4b-bd4d-ae98ac420205)
 
 
+![image](https://github.com/user-attachments/assets/a84dcc01-c5a4-4e63-93dc-d5eec20e6543)
+
+**Layers in Metadata**
+
+#CORE --> Which can be used by SAP to build standard fiori application
+
+#PARTNER --> partner company will create a MDE over standard CDS view and this will be used when customer executes the UI application overriding CORE
+
+#CUSTOMER --> Customer himself have developer(Product based company) their developer will create MDE so when executing UI it will prefer Customer overriding all 
+
+When customer is executing UI it will give preference to CUSTOMER if available and if not then PARTNER and if not then CORE
+
+#CUSTOMER--->#PARTNER--->#CORE
+![image](https://github.com/user-attachments/assets/6cf42694-c785-402c-b518-d337bcc58b65)
+
+
+ 
+
+
 
 
 
