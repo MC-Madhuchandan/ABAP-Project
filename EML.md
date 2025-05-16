@@ -10,9 +10,19 @@ the number in bracket (24) is an key
 Framework Keys
 
 ![image](https://github.com/user-attachments/assets/81077f36-1d89-413a-a0cb-85b6f270a5a4)
-**
-EML**
+
+**EML**
 ![image](https://github.com/user-attachments/assets/e7805d3f-d838-4405-84ca-8a3d808d05c6)
+
+**Basic EML Syntax**
+
+![image](https://github.com/user-attachments/assets/1cda20f5-93b0-420a-b1e9-8ef144c84dcc)
+
+IN read mode if we use addtional IN LOCAL MODE It will bypass the security checks assosciated to it
+
+![image](https://github.com/user-attachments/assets/e18b081f-1c9b-4f24-a3e8-c8f3197dba2d)
+
+
 
 
 
