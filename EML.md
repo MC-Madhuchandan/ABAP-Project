@@ -8,7 +8,11 @@ the number in bracket (24) is an key
 ![image](https://github.com/user-attachments/assets/54523455-0f04-4374-b796-ee6fe91020fc)
 
 Framework Keys
+
 ![image](https://github.com/user-attachments/assets/81077f36-1d89-413a-a0cb-85b6f270a5a4)
+**
+EML**
+![image](https://github.com/user-attachments/assets/e7805d3f-d838-4405-84ca-8a3d808d05c6)
 
 
 
