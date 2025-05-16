@@ -23,6 +23,11 @@ IN read mode if we use addtional IN LOCAL MODE It will bypass the security check
 ![image](https://github.com/user-attachments/assets/e18b081f-1c9b-4f24-a3e8-c8f3197dba2d)
 
 
+Example report 
+
+Usually we use MODIFY ENTITIES for CREATE UPDATE AND DELETE statement.
+
+
 
 
 
